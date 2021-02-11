@@ -1,10 +1,55 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Max's Craigslist Clone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-<h2>Testing my base html.</h2>
+ <nav class="blue">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo">Max's List</a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+ <div class="container">
+     <h2 style="text-align:center">What do you want to find on Max's list?</h2>
+     <div class="row">
+         <div class="col s4">
+            <!--first promo item-->
+            <div class="center">
+                <i class="large material-icons" style="color: #daa520">adb</i>
+                <strong><p>Fast Craigslist web scraper</p></strong>
+                <p clas="Light center">Scrape away right here with a beautiful GUI.</p>
+            </div>
+         </div>
+         <div class="col s4">
+                        <!--second promo item-->
+            <div class="center">
+                <i class="large material-icons" style="color: #85bb65">search</i>
+                <strong><p>Filter your searches</p></strong>
+                <p clas="Light center">Our built in price filter will help you save.</p>
+            </div>
+         </div>
+         <div class="col s4">
+                            <!--third promo item-->
+            <div class="center">
+                <i class="large material-icons" style="color: #551a8b">laptop_chromebook</i>
+                <strong><p>Prettier, easier to use interface</p></strong>
+                <p clas="Light center">Craigslist is ugly. This isn't.</p>
+            </div>
+         </div>
+     </div>
+ </div>
 </body>
+
 </html>
