@@ -5,4 +5,9 @@ def home(request):
     return render(request, 'base.html')
 
 def new_search(request):
-    return render(request, 'my_app/new_search.html')
+    search = request.POST.get('search')
+    print(search)
+    frontend_elements = {
+        'search': search,
+    }
+    return render(request, 'my_app/new_search.html', frontend_elements)

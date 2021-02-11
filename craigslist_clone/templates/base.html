@@ -49,10 +49,23 @@
             </div>
          </div>
      </div>
-     {% block content %}
+        <div class="row">
+            <form action="{% url 'new_search' %}"method = "POST">
+                {% csrf_token %}
+                <div class="col s9">
+                    <input type="text" name="search" placeholder="search">
+                </div>
+                <div class="col s3">
+                        <button class="btn waves-effect blue" type="submit" name="action">Search
+                        <i class="material-icons right">search</i>
+                      </button>
+                </div>
+            </form>
+        </div>
+        {% block content %}
 
-     {% endblock content %}
- </div>
+        {% endblock content %}
+    </div>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
