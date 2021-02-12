@@ -1,0 +1,47 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Max's Craigslist Clone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+ <nav class="blue">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo">Max's List</a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="/">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+ <div class="container">
+     <h2 style="text-align:center">What do you want to find on Max's list?</h2>
+    <div class="row">
+        <form action="{% url 'new_search' %}"method = "POST">
+            {% csrf_token %}
+            <div class="col s9">
+                <input type="text" name="search" placeholder="search">
+            </div>
+            <div class="col s3">
+                    <button class="btn waves-effect blue" type="submit" name="action">Search
+                    <i class="material-icons right">search</i>
+                  </button>
+            </div>
+        </form>
+    </div>
+    {% block content %}
+
+    {% endblock content %}
+</div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
