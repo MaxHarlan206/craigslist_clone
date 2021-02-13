@@ -1,1 +1,1 @@
-web: gunicorn craigslist_clone.wsgi
+web: python app.py
