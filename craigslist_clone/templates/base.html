@@ -1,5 +1,14 @@
 {% load static %}
-
+{% block additional_styles %}
+<style>
+   body {
+    background-image: url(
+    "../static/images/double-bubble-outline.png"
+    );
+    background-repeat: repeat;
+    background-size: 250px 250px;   }
+</style>
+{% endblock %}
 <html lang="en">
 
 <head>
@@ -17,7 +26,7 @@
     <div class="container nav-wrapper">
       <a href="#" class="brand-logo">Max's List</a>
       <ul id="nav-mobile" class="right">
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
       </ul>
     </div>
   </nav>
@@ -52,11 +61,11 @@
         <div class="row">
             <form action="{% url 'new_search' %}"method = "POST">
                 {% csrf_token %}
-                <div class="col s9">
+                <div class="col s10">
                     <input type="text" name="search" placeholder="search">
                 </div>
-                <div class="col s3">
-                        <button class="btn waves-effect blue" type="submit" name="action">Search
+                <div class="col s2">
+                        <button class="btn waves-effect blue right" type="submit" name="action">Search
                         <i class="material-icons right">search</i>
                       </button>
                 </div>

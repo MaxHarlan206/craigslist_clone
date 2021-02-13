@@ -52,7 +52,9 @@ defusedxml==0.6.0
 diff-match-patch @ file:///tmp/build/80754af9/diff-match-patch_1594828741838/work
 distlib==0.3.1
 distributed @ file:///tmp/build/80754af9/distributed_1605066520644/work
+dj-database-url==0.5.0
 Django==3.1.6
+django-heroku==0.3.1
 docutils==0.16
 entrypoints==0.3
 et-xmlfile==1.0.1
@@ -66,6 +68,7 @@ gevent @ file:///tmp/build/80754af9/gevent_1601397537062/work
 glob2==0.7
 gmpy2==2.0.8
 greenlet @ file:///tmp/build/80754af9/greenlet_1600874013538/work
+gunicorn==20.0.4
 h5py==2.10.0
 HeapDict==1.0.1
 html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
@@ -152,6 +155,8 @@ ply==3.11
 prometheus-client==0.8.0
 prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1602688806899/work
 psutil @ file:///tmp/build/80754af9/psutil_1598370257551/work
+psycopg2==2.8.6
+psycopg2-binary==2.8.6
 ptyprocess==0.6.0
 py @ file:///tmp/build/80754af9/py_1593446248552/work
 pycodestyle==2.6.0
@@ -166,6 +171,7 @@ pylint @ file:///tmp/build/80754af9/pylint_1598623985952/work
 pyodbc===4.0.0-unsupported
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
 pyparsing==2.4.7
+pypi==2.1
 pyrsistent @ file:///tmp/build/80754af9/pyrsistent_1600141720057/work
 PySocks==1.7.1
 pytest==0.0.0
@@ -243,6 +249,7 @@ watchdog @ file:///tmp/build/80754af9/watchdog_1593447344699/work
 wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
 webencodings==0.5.1
 Werkzeug==1.0.1
+whitenoise==5.2.0
 widgetsnbextension==3.5.1
 wrapt==1.11.2
 wurlitzer @ file:///tmp/build/80754af9/wurlitzer_1594753850195/work

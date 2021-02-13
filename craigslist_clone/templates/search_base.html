@@ -1,5 +1,14 @@
 {% load static %}
-
+{% block additional_styles %}
+<style>
+   body {
+    background-image: url(
+    "../static/images/double-bubble-outline.png"
+    );
+    background-repeat: repeat;
+    background-size: 250px 250px;   }
+</style>
+{% endblock %}
 <html lang="en">
 
 <head>
@@ -15,7 +24,7 @@
 <body>
  <nav class="blue">
     <div class="container nav-wrapper">
-      <a href="#" class="brand-logo">Max's List</a>
+      <a href="/" class="brand-logo">Max's List</a>
       <ul id="nav-mobile" class="right">
         <li><a href="/">Home</a></li>
       </ul>

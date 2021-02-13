@@ -4,6 +4,14 @@
 }
 
 .card-image {
-    height: 250px;
+    max-height:250px;
+    height: auto;
     overflow: hidden;
+}
+
+.card-action a{
+    color: #000050 !important;
+}
+.card-action a:hover{
+    color: #FFF !important;
 }
