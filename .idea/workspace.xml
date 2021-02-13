@@ -31,11 +31,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/craigslist_clone/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/craigslist_clone" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/craigslist_clone" />
+      <recent name="$PROJECT_DIR$/craigslist_clone/craigslist_clone" />
       <recent name="$PROJECT_DIR$/craigslist_clone/static/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -57,7 +59,7 @@
       <workItem from="1612927079219" duration="69000" />
       <workItem from="1612927169394" duration="599000" />
       <workItem from="1613005313888" duration="8022000" />
-      <workItem from="1613072225862" duration="35386000" />
+      <workItem from="1613072225862" duration="36252000" />
     </task>
     <servers />
   </component>
